@@ -1,4 +1,3 @@
-﻿var c = 1;
 var searchElement;
 var max_elements = 9; 
 var arr = [];
@@ -7,7 +6,7 @@ var conclusion = "";
 
 for (i = 0; i <= max_elements; i++) { 
   arr[i] = Math.floor(Math.random() * (16 - 1)) + 1;  
-  conclusion = conclusion + "Число " + c++ + ": " + arr[i] + "\n";
+  conclusion = conclusion + arr[i] + "\n";
 }
 alert(conclusion);
 
