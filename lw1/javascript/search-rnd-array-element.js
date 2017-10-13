@@ -1,31 +1,31 @@
 ﻿var c = 1;
-var poisk;
-var N = 9; 
+var searchElement;
+var max_elements = 9; 
 var arr = [];
 var isFound = false;
-var vivod = "";
+var conclusion = "";
 
-for (i = 0; i <= N; i++) { 
+for (i = 0; i <= max_elememnts; i++) { 
   arr[i] = Math.floor(Math.random() * (16 - 1)) + 1;  
-  vivod = vivod + "Число " + c++ + ": " + arr[i] + "\n";
+  conclusion = conclusion + "Число " + c++ + ": " + arr[i] + "\n";
 }
-alert(vivod);
+alert(conclusion);
 
-var poisk = prompt("Число для поиска: "); 
-if ((poisk == "") || (isNaN(poisk)) || (poisk == null)) {
+var searchElement = prompt("Число для поиска: "); 
+if ((searchElement == "") || (isNaN(searchElement)) || (searchElement == null)) {
   alert("Ошибка ввода");
   windows.stop;
 }
 
-for (i = 0; i <= N; i++) {
-  if (arr[i] == poisk) {
+for (i = 0; i <= max_elements; i++) {
+  if (arr[i] == searchElemenrt) {
     isFound = true;
   }
 }  	
 
 if (!isFound) { 
-  vivod = "Число: " + poisk + " не найдено";
+  conclusion = "Число: " + searchElement + " не найдено";
 } else {
-  vivod = "Число: " + poisk + " найдено";
+  conclusion = "Число: " + searchElement + " найдено";
 }
-alert(vivod);
+alert(conclusion);
