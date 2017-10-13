@@ -5,7 +5,7 @@ var arr = [];
 var isFound = false;
 var conclusion = "";
 
-for (i = 0; i <= max_elememnts; i++) { 
+for (i = 0; i <= max_elements; i++) { 
   arr[i] = Math.floor(Math.random() * (16 - 1)) + 1;  
   conclusion = conclusion + "Число " + c++ + ": " + arr[i] + "\n";
 }
@@ -18,7 +18,7 @@ if ((searchElement == "") || (isNaN(searchElement)) || (searchElement == null)) 
 }
 
 for (i = 0; i <= max_elements; i++) {
-  if (arr[i] == searchElemenrt) {
+  if (arr[i] == searchElement) {
     isFound = true;
   }
 }  	
